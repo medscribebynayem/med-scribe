@@ -462,7 +462,7 @@
         // Load Your Saved Medicines
         function loadMedicines() {
             if (!userId) return;
-            const collectionPath = `/artifacts/${appId}/users/${userId}/medicines`;
+            const collectionPath = `/artifacts/${1:867930349978:web:887250c2552e17f5c45a23}/users/${userId}/medicines`;
             const q = query(collection(db, collectionPath));
             onSnapshot(q, (querySnapshot) => {
                 medicinesList.innerHTML = '';
